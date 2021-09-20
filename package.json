@@ -4,7 +4,8 @@
   "description": "## 1 - Commandes **Run** : `npm init -y `<br> **Run** : `npm install -D tailwindcss postcss-cli autoprefixer`<br> **Run** : `npx tailwindcss init -p`",
   "main": "index.js",
   "scripts": {
-    "build": "postcss -w src/tailwind.css -o public/style.css"
+    "build": "postcss -w src/tailwind.css -o public/style.css",
+    "prod": "cross-env NODE_ENV=production postcss -w src/tailwind.css -o public/style.css"
   },
   "keywords": [],
   "author": "",
@@ -14,5 +15,9 @@
     "postcss": "^8.3.6",
     "postcss-cli": "^8.3.1",
     "tailwindcss": "^2.2.10"
+  },
+  "dependencies": {
+    "@tailwindcss/aspect-ratio": "^0.2.1",
+    "cross-env": "^7.0.3"
   }
 }

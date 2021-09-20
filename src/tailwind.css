@@ -5,9 +5,39 @@
 @tailwind utilities;
 
 @layer base {
+    h1 {
+        @apply font-WorkSans font-thin text-green-400 text-3xl md:text-4xl text-center my-8 mx-auto px-4 leading-10
+    }
 
-}
+    p {
+        @apply text-gray-500 
+    }
+};
 
 @layer components {
+    #country {
+        @apply h-10
+    }
+    .card-img {
+        @apply rounded-lg border-gray-100 border-solid border overflow-hidden cursor-pointer hover:shadow-xl hover:scale-110 transform scale-100 transition-all
+    }
+    .btn-open {
+        @apply uppercase text-xs font-bold bg-blue-600 hover:bg-blue-700 text-white py-3 px-6 rounded-md
+    }
 
+    .link {
+        @apply text-blue-600 hover:underline
+    }
+
+    .header-depart-list {
+        @apply pt-9 md:py-2 md:px-4 md:w-full hover:underline md:hover:no-underline md:hover:text-green-400 md:hover:bg-gray-100 md:mt-3
+    }
+
+};
+
+@layer utilities {
+    .square {
+        aspect-ratio: 1/1;
+    }
+    
 }
